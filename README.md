@@ -9,12 +9,12 @@ Harbor CLI v0.0.27.
 
 | Stage | Domain | Weight | Content | Status |
 | --- | --- | --- | --- | --- |
-| STG001 | Architecture, Installation & Harbor CLI Basics | 10 % | [ATS100](https://github.com/astrona-io/ATS100) | Draft, being written |
-| STG002 | Project Management, RBAC & Multi-Tenancy | 20 % | [ATS101](https://github.com/astrona-io/ATS101) | Draft, being written |
-| STG003 | Content Trust, Vulnerability Scanning & SBOMs | 25 % | [ATS102](https://github.com/astrona-io/ATS102) | Draft, being written |
-| STG004 | Replication, P2P Preheating & Remote Registries | 15 % | [ATS103](https://github.com/astrona-io/ATS103) | Draft, being written |
-| STG005 | Harbor CLI Automation, REST API & Webhooks | 15 % | [ATS104](https://github.com/astrona-io/ATS104) | Draft, being written |
-| STG006 | Enterprise Operations, High Availability & Helm | 15 % | [ATS105](https://github.com/astrona-io/ATS105) | Draft, being written |
+| STG001 | Architecture, Installation & Harbor CLI Basics | 10 % | [ATS100](https://github.com/astrona-io/ATS100) | Draft, written, not yet run |
+| STG002 | Project Management, RBAC & Multi-Tenancy | 20 % | [ATS101](https://github.com/astrona-io/ATS101) | Draft, written, not yet run |
+| STG003 | Content Trust, Vulnerability Scanning & SBOMs | 25 % | [ATS102](https://github.com/astrona-io/ATS102) | Draft, written, not yet run |
+| STG004 | Replication, P2P Preheating & Remote Registries | 15 % | [ATS103](https://github.com/astrona-io/ATS103) | Draft, written, not yet run |
+| STG005 | Harbor CLI Automation, REST API & Webhooks | 15 % | [ATS104](https://github.com/astrona-io/ATS104) | Draft, written, not yet run |
+| STG006 | Enterprise Operations, High Availability & Helm | 15 % | [ATS105](https://github.com/astrona-io/ATS105) | Draft, written, not yet run |
 
 The site picks it up through [astrona-content](https://github.com/astrona-io/astrona-content):
 a file in `courses/` that points at this repository, and the content sync
