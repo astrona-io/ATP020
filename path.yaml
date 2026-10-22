@@ -1,0 +1,116 @@
+apiVersion: content.astrona.io/v1alpha1
+kind: TrainingPath
+metadata:
+  id: ATP020
+  slug: harbor
+  title: "Harbor"
+  description: >-
+    The Harbor track: one course per domain — architecture, installation and
+    the Harbor CLI, projects and access control, scanning, signing and SBOMs,
+    replication and preheating, automation with the CLI, REST API and
+    webhooks, and high-availability operations — with readings, ungraded
+    playgrounds and graded hands-on labs that run on your own computer with
+    the Astrona CLI.
+  version: "0.1.0"
+  language: "en"
+  maturity: draft
+  authors:
+    - name: "Paris Nakita Kejser"
+      email: "paris@astrona.io"
+      company: "Astrona.io"
+  tags:
+    - "Harbor"
+    - "Container Registry"
+    - "Supply Chain Security"
+    - "OCI"
+    - "CNCF"
+  license: "Apache-2.0"
+
+spec:
+  audience: "Platform and security engineers who run a container registry."
+  difficulty: "Intermediate"
+
+  # There is no official Harbor certification exam. The domains and their
+  # weights below are Astrona's own.
+  examPreparation:
+    enabled: false
+
+  prerequisites:
+    - "Working knowledge of Kubernetes, Helm and kubectl."
+    - "Basic knowledge of container images: tags, digests, push and pull."
+    - "A computer that can run the Astrona CLI with Docker or Podman, for the labs."
+
+  learningOutcomes:
+    - "Install Harbor with Helm and TLS, and work with it through the harbor CLI."
+    - "Isolate teams with projects, roles, quotas, retention and immutability rules."
+    - "Scan, sign and describe artifacts, and stop vulnerable or unsigned images from being pulled."
+    - "Replicate between registries, cache remote registries and preheat images."
+    - "Automate Harbor with the CLI, the REST API, robot accounts and webhooks."
+    - "Run Harbor highly available on external PostgreSQL, Redis and object storage, and back it up and upgrade it."
+
+  stages:
+    - id: "ATP020-STG001"
+      title: "Architecture, Installation & Harbor CLI Basics"
+      description: "Harbor's components and OCI artifacts, installing Harbor with Helm and TLS (and the Docker Compose installers), and the harbor command-line tool with credentials and contexts."
+      weight: 10
+      maturity: draft
+      content:
+        - ref: ATS100
+          repository: "https://github.com/astrona-io/ATS100"
+          path: "."
+          version: "0.1.0"
+
+    - id: "ATP020-STG002"
+      title: "Project Management, RBAC & Multi-Tenancy"
+      description: "Public and private projects, member roles, storage quotas, tag retention and immutability, and OIDC and LDAP identity with group-based access."
+      weight: 20
+      maturity: draft
+      content:
+        - ref: ATS101
+          repository: "https://github.com/astrona-io/ATS101"
+          path: "."
+          version: "0.1.0"
+
+    - id: "ATP020-STG003"
+      title: "Content Trust, Vulnerability Scanning & SBOMs"
+      description: "Scanning with Trivy, SBOM generation, Cosign signatures and signature enforcement, CVE allowlists, and preventing vulnerable images from being pulled."
+      weight: 25
+      maturity: draft
+      content:
+        - ref: ATS102
+          repository: "https://github.com/astrona-io/ATS102"
+          path: "."
+          version: "0.1.0"
+
+    - id: "ATP020-STG004"
+      title: "Replication, P2P Preheating & Remote Registries"
+      description: "Push and pull replication, registry endpoints, proxy cache projects, and P2P preheating with Dragonfly."
+      weight: 15
+      maturity: draft
+      content:
+        - ref: ATS103
+          repository: "https://github.com/astrona-io/ATS103"
+          path: "."
+          version: "0.1.0"
+
+    - id: "ATP020-STG005"
+      title: "Harbor CLI Automation, REST API & Webhooks"
+      description: "Automating Harbor with the harbor CLI and the REST API v2.0, robot accounts, and webhook notifications for CI/CD pipelines."
+      weight: 15
+      maturity: draft
+      content:
+        - ref: ATS104
+          repository: "https://github.com/astrona-io/ATS104"
+          path: "."
+          version: "0.1.0"
+
+    - id: "ATP020-STG006"
+      title: "Enterprise Operations, High Availability & Helm"
+      description: "High availability with harbor-helm, external PostgreSQL, Redis and S3-compatible storage, backup, upgrades and database migration."
+      weight: 15
+      maturity: draft
+      content:
+        - ref: ATS105
+          repository: "https://github.com/astrona-io/ATS105"
+          path: "."
+          version: "0.1.0"
